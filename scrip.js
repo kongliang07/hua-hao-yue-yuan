@@ -1,22 +1,18 @@
-/* =========================================================
+/* =================================================
    花好月圆 · 中秋佳节
-========================================================= */
+================================================= */
 
 let currentLanguage = "zh";
 
-
-/* 故宫宝贝团圆夜封面 */
-
 const palaceCover =
-  "https://n.sinaimg.cn/sinakd20251230s/600/w1920h1080/20251230/380a-bc203eaaed5827ee1d3fbfeba5985b77.jpg";
+  "https://file.digitaling.com/eImg/cover/20251011/20251011153401_35415.jpg?v=20261007";
 
 
-/* =========================================================
-   多语言
-========================================================= */
+/* =================================================
+   页面多语言
+================================================= */
 
 const translations = {
-
   zh: {
     navHome: "首页",
     navCountdown: "中秋倒数",
@@ -115,16 +111,15 @@ const translations = {
     footerText: "愿每一轮明月，都照亮回家的路。"
   },
 
-
   en: {
     navHome: "Home",
     navCountdown: "Countdown",
-    navHistory: "Mid-Autumn Origin",
+    navHistory: "Origin",
     navWhy: "Why Celebrate",
-    navCustoms: "What We Do",
-    navFood: "Mid-Autumn Food",
-    navVideos: "Mid-Autumn Videos",
-    navBlessing: "Mid-Autumn Wishes",
+    navCustoms: "Traditions",
+    navFood: "Festival Food",
+    navVideos: "Videos",
+    navBlessing: "Wishes",
 
     heroSmall: "MID-AUTUMN FESTIVAL",
     heroTitle: "A Moonlit Reunion",
@@ -141,32 +136,32 @@ const translations = {
     minutes: "Minutes",
     seconds: "Seconds",
 
-    historyLabel: "MID-AUTUMN ORIGIN",
+    historyLabel: "ORIGIN",
     historyTitle: "A Festival Passed Down Through Generations",
-    historyIntro: "The Mid-Autumn Festival developed through a long history of moon observation, moon worship and moon-viewing traditions.",
+    historyIntro: "The festival developed through a long history of moon observation, moon worship and moon-viewing traditions.",
     history1Title: "Ancient Moon Observation",
-    history1Text: "Ancient people carefully observed the moon and seasonal changes.",
-    history2Title: "The 15th Day of the Eighth Month",
-    history2Text: "Moon-related traditions gradually became connected with the eighth lunar month.",
-    history3Title: "The Moon Became a Symbol of Reunion",
+    history1Text: "Ancient people observed the moon and seasonal changes.",
+    history2Title: "The Eighth Lunar Month",
+    history2Text: "Moon-related traditions gradually developed into an important festival.",
+    history3Title: "The Moon Symbolizes Reunion",
     history3Text: "The full moon came to symbolize completeness and family reunion.",
-    history4Title: "The Tradition Continues Today",
-    history4Text: "Mooncakes, moon-viewing and family reunions remain important parts of the festival.",
+    history4Title: "Traditions Continue Today",
+    history4Text: "Mooncakes, moon-viewing and family reunions remain important traditions.",
     historyQuote: "The moon connects people, even when they are far apart.",
 
     whyLabel: "WHY CELEBRATE",
-    whyTitle: "Because Reunion Is the Heart of Mid-Autumn",
-    whyIntro: "The festival is not only about the moon or mooncakes. It is about bringing people together.",
+    whyTitle: "Reunion Is the Heart of Mid-Autumn",
+    whyIntro: "The festival is about more than the moon or mooncakes. It is about bringing people together.",
     why1Title: "Think of Family",
-    why1Text: "No matter how far we go, Mid-Autumn reminds us of home.",
+    why1Text: "Mid-Autumn reminds us of home, no matter how far we go.",
     why2Title: "Feel Together",
     why2Text: "A shared meal and a full moon can bring everyone closer.",
     why3Title: "Pass Down Culture",
     why3Text: "Each generation keeps the tradition alive.",
     why4Title: "Treasure the Present",
-    why4Text: "Being able to eat and talk together is already a precious gift.",
+    why4Text: "Sharing food and conversation with loved ones is precious.",
 
-    customsLabel: "WHAT WE DO",
+    customsLabel: "TRADITIONS",
     customsTitle: "From a Family Meal to a Full Moon",
     customsIntro: "These traditions turn the meaning of reunion into a special evening.",
     custom1Title: "Moon Viewing",
@@ -176,26 +171,26 @@ const translations = {
     custom3Title: "Family Dinner",
     custom3Text: "Sit together and share stories around the table.",
     custom4Title: "Lanterns",
-    custom4Text: "Carry lanterns and enjoy the warm festive atmosphere.",
+    custom4Text: "Carry lanterns and enjoy the festive atmosphere.",
     custom5Title: "Lantern Displays",
     custom5Text: "Admire beautiful lanterns and traditional celebrations.",
     custom6Title: "Conversation",
     custom6Text: "Talk with family and treasure the time together.",
 
-    foodLabel: "MID-AUTUMN FOOD",
+    foodLabel: "FESTIVAL FOOD",
     foodTitle: "A Mooncake, A Taste of Home",
-    foodIntro: "Different regions have different mooncake flavors, but they all carry the meaning of reunion.",
+    foodIntro: "Different regions have different mooncake flavors, but all carry the meaning of reunion.",
     foodSideTitle: "Different flavors,\none beautiful meaning:\nReunion",
-    foodSideText: "From traditional Cantonese mooncakes to modern snow-skin mooncakes,\nMid-Autumn always brings back the taste of home.",
+    foodSideText: "From traditional Cantonese mooncakes to modern snow-skin mooncakes, the festival brings back the taste of home.",
     foodTag1: "Classic",
     food1Title: "Cantonese Mooncake",
-    food1Text: "Thin crust with rich fillings such as lotus seed paste and salted egg yolk.",
+    food1Text: "Thin crust with fillings such as lotus seed paste and salted egg yolk.",
     foodTag2: "Fresh",
     food2Title: "Snow-Skin Mooncake",
-    food2Text: "Soft, colorful and especially popular among younger generations.",
+    food2Text: "Soft, colorful and popular among younger generations.",
     foodTag3: "Pairing",
     food3Title: "Mooncake & Tea",
-    food3Text: "A mooncake with tea makes a relaxing Mid-Autumn evening.",
+    food3Text: "A mooncake with tea makes a relaxing festival evening.",
     foodTag4: "Reunion",
     food4Title: "Family Feast",
     food4Text: "A warm homemade dinner shared by the whole family.",
@@ -204,7 +199,7 @@ const translations = {
     videosTitle: "Discover Mid-Autumn Through Videos",
     videosIntro: "Explore the moon, history, family reunion, traditions and food.",
 
-    blessingLabel: "MID-AUTUMN WISHES",
+    blessingLabel: "FESTIVAL WISHES",
     blessingTitle: "A Warm Wish for Someone Important",
     blessingIntro: "May the people you love be close and your hopes come true.",
     newWish: "Another Wish",
@@ -214,16 +209,15 @@ const translations = {
     footerText: "May every full moon light your way home."
   },
 
-
   ms: {
     navHome: "Laman Utama",
     navCountdown: "Kiraan Masa",
     navHistory: "Asal Usul",
     navWhy: "Mengapa Diraikan",
-    navCustoms: "Apa Yang Dilakukan",
-    navFood: "Makanan Perayaan",
-    navVideos: "Video Perayaan",
-    navBlessing: "Ucapan Perayaan",
+    navCustoms: "Adat Tradisi",
+    navFood: "Makanan",
+    navVideos: "Video",
+    navBlessing: "Ucapan",
 
     heroSmall: "MID-AUTUMN FESTIVAL",
     heroTitle: "Bulan Purnama & Keluarga",
@@ -241,11 +235,11 @@ const translations = {
     seconds: "Saat",
 
     historyLabel: "ASAL USUL",
-    historyTitle: "Perayaan yang Diwarisi Selama Berabad-abad",
+    historyTitle: "Perayaan yang Diwarisi Turun-Temurun",
     historyIntro: "Perayaan ini berkembang daripada pemerhatian bulan, penyembahan bulan dan tradisi menikmati bulan.",
     history1Title: "Memerhati Bulan",
     history1Text: "Masyarakat dahulu memerhatikan perubahan bulan dan musim.",
-    history2Title: "Hari ke-15 Bulan Kelapan",
+    history2Title: "Bulan Kelapan dalam Kalendar Cina",
     history2Text: "Tradisi berkaitan bulan berkembang menjadi sambutan yang penting.",
     history3Title: "Bulan Sebagai Simbol Penyatuan",
     history3Text: "Bulan penuh melambangkan kesempurnaan dan pertemuan keluarga.",
@@ -254,18 +248,18 @@ const translations = {
     historyQuote: "Bulan menyatukan hati walaupun kita berjauhan.",
 
     whyLabel: "MENGAPA DIRAIAKAN",
-    whyTitle: "Kerana Penyatuan Keluarga Adalah Makna Utamanya",
+    whyTitle: "Kebersamaan Adalah Makna Utamanya",
     whyIntro: "Perayaan ini bukan hanya tentang bulan, tetapi tentang meluangkan masa bersama keluarga.",
     why1Title: "Mengingati Keluarga",
-    why1Text: "Walau sejauh mana kita pergi, perayaan ini mengingatkan kita kepada keluarga.",
+    why1Text: "Perayaan ini mengingatkan kita kepada keluarga walau di mana kita berada.",
     why2Title: "Merasai Kebersamaan",
     why2Text: "Hidangan bersama dan bulan purnama mendekatkan hati.",
     why3Title: "Mewarisi Budaya",
     why3Text: "Setiap generasi meneruskan tradisi ini.",
-    why4Title: "Menghargai Sekarang",
-    why4Text: "Masa bersama keluarga adalah hadiah yang sangat berharga.",
+    why4Title: "Menghargai Masa Kini",
+    why4Text: "Masa bersama keluarga ialah hadiah yang sangat berharga.",
 
-    customsLabel: "APA YANG DILAKUKAN",
+    customsLabel: "ADAT TRADISI",
     customsTitle: "Daripada Hidangan Keluarga Hingga Bulan Purnama",
     customsIntro: "Tradisi ini menjadikan makna kebersamaan lebih dekat dengan kehidupan seharian.",
     custom1Title: "Melihat Bulan",
@@ -285,16 +279,16 @@ const translations = {
     foodTitle: "Satu Kuih Bulan, Satu Rasa Rumah",
     foodIntro: "Setiap kawasan mempunyai rasa kuih bulan yang berbeza, tetapi semuanya membawa makna kebersamaan.",
     foodSideTitle: "Rasa yang berbeza,\nsatu makna:\nKebersamaan",
-    foodSideText: "Daripada kuih bulan tradisional hingga versi moden,\nperayaan ini sentiasa mengingatkan kita kepada rasa rumah.",
+    foodSideText: "Daripada kuih bulan tradisional hingga versi moden, perayaan ini mengingatkan kita kepada rasa rumah.",
     foodTag1: "Tradisional",
     food1Title: "Kuih Bulan Kantonis",
-    food1Text: "Kulit nipis dengan inti seperti pes biji teratai dan kuning telur masin.",
+    food1Text: "Kulit nipis dengan inti pes biji teratai dan kuning telur masin.",
     foodTag2: "Moden",
     food2Title: "Kuih Bulan Kulit Salji",
     food2Text: "Lembut, berwarna-warni dan digemari generasi muda.",
     foodTag3: "Padanan",
     food3Title: "Kuih Bulan & Teh",
-    food3Text: "Kuih bulan bersama teh memberikan suasana perayaan yang santai.",
+    food3Text: "Kuih bulan bersama teh memberikan suasana yang santai.",
     foodTag4: "Keluarga",
     food4Title: "Jamuan Keluarga",
     food4Text: "Hidangan rumah yang hangat untuk dinikmati bersama keluarga.",
@@ -312,175 +306,162 @@ const translations = {
     footerTitle: "Bulan Purnama & Keluarga",
     footerText: "Semoga setiap bulan purnama menerangi jalan pulang."
   }
-
 };
 
 
-/* =========================================================
-   影片资料
-
-   第1个：为什么我们珍惜团圆
-   第2个：从月亮开始的故事
-   第3个：玉兔话中秋：从遥望到探寻
-   第4个：赏月、赏灯与传统习俗
-   第5个：月饼里的中秋味道
-   第6个：故宫宝贝团圆夜
-========================================================= */
+/* =================================================
+   六张影片资料
+================================================= */
 
 const videoData = {
-
   zh: [
-
     {
       title: "为什么我们珍惜团圆",
-      description: "中秋为什么让我们特别重视团圆？通过真实的家庭故事，感受人与人之间最温暖的牵挂。",
-      cover: "https://i.ytimg.com/vi/kfZRy98UN1Q/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/kfZRy98UN1Q?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "通过家庭与团圆的故事，感受人与人之间温暖的牵挂。",
+      cover: "https://i.ytimg.com/vi/kfZRy98UN1Q/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/kfZRy98UN1Q/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/kfZRy98UN1Q?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "从月亮开始的故事",
-      description: "从月亮出发，认识中秋节背后的故事，看看人们为什么一直把这一天与月亮联系在一起。",
-      cover: "https://i.ytimg.com/vi/sgDjp-j-K3o/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/sgDjp-j-K3o?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "从月亮出发，认识中秋节背后的故事与文化。",
+      cover: "https://i.ytimg.com/vi/sgDjp-j-K3o/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/sgDjp-j-K3o/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/sgDjp-j-K3o?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "玉兔话中秋：从遥望到探寻",
-      description: "从古人仰望月亮，到今天不断探索月球，一起看看月亮与中秋之间特别而有趣的联系。",
-      cover: "https://i.ytimg.com/vi/LBb0sScTgZs/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/LBb0sScTgZs?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "从古人仰望月亮，到今天探索月球，认识月亮与中秋的联系。",
+      cover: "https://i.ytimg.com/vi/LBb0sScTgZs/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/LBb0sScTgZs/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/LBb0sScTgZs?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "赏月、赏灯与传统习俗",
       description: "赏月、提灯笼、看花灯，这些熟悉的中秋习俗，记录着一代又一代人的节日记忆。",
-      cover: "https://i.ytimg.com/vi/zIWoFsgicuo/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/zIWoFsgicuo?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      cover: "https://i.ytimg.com/vi/zIWoFsgicuo/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/zIWoFsgicuo/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/zIWoFsgicuo?autoplay=1&controls=1&playsinline=1&rel=0",
+      type: "customs"
     },
-
     {
       title: "月饼里的中秋味道",
-      description: "从传统月饼到不同地区的特色口味，一起认识藏在月饼里的中秋文化与家的味道。",
-      cover: "https://i.ytimg.com/vi/3bEGWMAbtqk/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/3bEGWMAbtqk?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "从传统月饼到不同地区的特色口味，认识月饼里的文化与家的味道。",
+      cover: "https://i.ytimg.com/vi/3bEGWMAbtqk/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/3bEGWMAbtqk/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/3bEGWMAbtqk?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "故宫宝贝团圆夜",
       description: "玉兔唤醒沉睡的故宫宝贝，让不同朝代的文物在月光下相聚，一起感受中秋节关于思念与团圆的美好故事。",
       cover: palaceCover,
+      fallbackCover: "",
       url: "https://v.qq.com/txp/iframe/player.html?auto=0&tiny=0&vid=m3174fushzr",
-      palace: true
+      type: "palace"
     }
-
   ],
-
 
   en: [
-
     {
       title: "Why We Treasure Reunion",
-      description: "Why does Mid-Autumn make reunion so meaningful? Discover the warmth of family and the memories we treasure.",
-      cover: "https://i.ytimg.com/vi/kfZRy98UN1Q/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/kfZRy98UN1Q?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Discover the warmth of family, reunion and the memories we treasure.",
+      cover: "https://i.ytimg.com/vi/kfZRy98UN1Q/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/kfZRy98UN1Q/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/kfZRy98UN1Q?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "A Story That Begins With the Moon",
-      description: "Start with the moon and discover why it has remained closely connected with the Mid-Autumn Festival.",
-      cover: "https://i.ytimg.com/vi/sgDjp-j-K3o/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/sgDjp-j-K3o?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Explore the stories and cultural background behind Mid-Autumn.",
+      cover: "https://i.ytimg.com/vi/sgDjp-j-K3o/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/sgDjp-j-K3o/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/sgDjp-j-K3o?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "Jade Rabbit: From Looking Up to Exploring",
-      description: "From ancient moon gazing to modern lunar exploration, discover the fascinating connection between the moon and Mid-Autumn.",
-      cover: "https://i.ytimg.com/vi/LBb0sScTgZs/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/LBb0sScTgZs?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "From ancient moon gazing to modern lunar exploration.",
+      cover: "https://i.ytimg.com/vi/LBb0sScTgZs/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/LBb0sScTgZs/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/LBb0sScTgZs?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "Moon Viewing, Lanterns & Traditions",
-      description: "Explore the traditional customs that make the Mid-Autumn night warm and memorable.",
-      cover: "https://i.ytimg.com/vi/zIWoFsgicuo/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/zIWoFsgicuo?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Explore the familiar customs that make the festival warm and memorable.",
+      cover: "https://i.ytimg.com/vi/zIWoFsgicuo/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/zIWoFsgicuo/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/zIWoFsgicuo?autoplay=1&controls=1&playsinline=1&rel=0",
+      type: "customs"
     },
-
     {
       title: "The Taste of Mid-Autumn",
-      description: "Discover mooncakes and the different flavors that carry the memories of home.",
-      cover: "https://i.ytimg.com/vi/3bEGWMAbtqk/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/3bEGWMAbtqk?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Discover mooncakes and the flavors that carry memories of home.",
+      cover: "https://i.ytimg.com/vi/3bEGWMAbtqk/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/3bEGWMAbtqk/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/3bEGWMAbtqk?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "Palace Museum Treasures Reunion Night",
-      description: "A magical Mid-Autumn story in which treasured cultural artifacts come together under the moonlight.",
+      description: "A Mid-Autumn story about traditional treasures, memories and reunion.",
       cover: palaceCover,
+      fallbackCover: "",
       url: "https://v.qq.com/txp/iframe/player.html?auto=0&tiny=0&vid=m3174fushzr",
-      palace: true
+      type: "palace"
     }
-
   ],
 
-
   ms: [
-
     {
       title: "Mengapa Kita Menghargai Kebersamaan",
-      description: "Rasai kehangatan keluarga dan kenangan yang berharga pada perayaan Pertengahan Musim Luruh.",
-      cover: "https://i.ytimg.com/vi/kfZRy98UN1Q/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/kfZRy98UN1Q?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Rasai kehangatan keluarga dan kenangan yang berharga.",
+      cover: "https://i.ytimg.com/vi/kfZRy98UN1Q/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/kfZRy98UN1Q/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/kfZRy98UN1Q?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "Kisah yang Bermula dengan Bulan",
-      description: "Kenali kisah dan tradisi yang berkaitan dengan perayaan Pertengahan Musim Luruh.",
-      cover: "https://i.ytimg.com/vi/sgDjp-j-K3o/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/sgDjp-j-K3o?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Kenali kisah dan budaya di sebalik perayaan ini.",
+      cover: "https://i.ytimg.com/vi/sgDjp-j-K3o/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/sgDjp-j-K3o/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/sgDjp-j-K3o?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "Arnab Jed: Dari Menatap ke Meneroka",
-      description: "Daripada melihat bulan pada zaman dahulu hingga penerokaan bulan pada zaman moden.",
-      cover: "https://i.ytimg.com/vi/LBb0sScTgZs/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/LBb0sScTgZs?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Daripada melihat bulan hingga penerokaan bulan pada zaman moden.",
+      cover: "https://i.ytimg.com/vi/LBb0sScTgZs/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/LBb0sScTgZs/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/LBb0sScTgZs?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "Melihat Bulan, Tanglung & Tradisi",
       description: "Kenali adat melihat bulan, membawa tanglung dan menikmati suasana perayaan.",
-      cover: "https://i.ytimg.com/vi/zIWoFsgicuo/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/zIWoFsgicuo?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      cover: "https://i.ytimg.com/vi/zIWoFsgicuo/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/zIWoFsgicuo/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/zIWoFsgicuo?autoplay=1&controls=1&playsinline=1&rel=0",
+      type: "customs"
     },
-
     {
       title: "Rasa Perayaan Pertengahan Musim Luruh",
-      description: "Kenali kuih bulan dan pelbagai rasa yang membawa kenangan tentang rumah dan keluarga.",
-      cover: "https://i.ytimg.com/vi/3bEGWMAbtqk/hqdefault.jpg",
-      url: "https://www.youtube.com/embed/3bEGWMAbtqk?autoplay=1&mute=0&controls=1&playsinline=1&rel=0"
+      description: "Kenali kuih bulan dan rasa yang membawa kenangan tentang rumah.",
+      cover: "https://i.ytimg.com/vi/3bEGWMAbtqk/maxresdefault.jpg",
+      fallbackCover: "https://i.ytimg.com/vi/3bEGWMAbtqk/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/3bEGWMAbtqk?autoplay=1&controls=1&playsinline=1&rel=0"
     },
-
     {
       title: "Malam Penyatuan Khazanah Istana",
-      description: "Satu kisah istimewa tentang budaya tradisional dan makna kebersamaan pada malam perayaan.",
+      description: "Satu kisah tentang budaya tradisional dan makna kebersamaan.",
       cover: palaceCover,
+      fallbackCover: "",
       url: "https://v.qq.com/txp/iframe/player.html?auto=0&tiny=0&vid=m3174fushzr",
-      palace: true
+      type: "palace"
     }
-
   ]
-
 };
 
 
-/* =========================================================
+/* =================================================
    祝福语
-========================================================= */
+================================================= */
 
 const blessings = {
-
   zh: [
     "月圆人团圆，愿所有美好都在这个中秋如期而至。",
     "愿你的中秋有月、有家、有爱，也有最温柔的笑容。",
@@ -579,91 +560,79 @@ const blessings = {
     "Semoga hari-hari anda dipenuhi kebahagiaan.",
     "Semoga perayaan ini meninggalkan kenangan yang indah."
   ]
-
 };
 
 
-/* =========================================================
-   页面元素
-========================================================= */
+/* =================================================
+   语言切换
+================================================= */
 
-const videoGrid = document.getElementById("videoGrid");
-const videoModal = document.getElementById("videoModal");
-const videoFrame = document.getElementById("videoFrame");
-const videoClose = document.getElementById("videoClose");
-const videoModalOverlay = document.getElementById("videoModalOverlay");
-
-const blessingText = document.getElementById("blessingText");
-const newWishBtn = document.getElementById("newWishBtn");
-const copyWishBtn = document.getElementById("copyWishBtn");
-
-const backTop = document.getElementById("backTop");
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const navPanel = document.getElementById("navPanel");
-
-
-/* =========================================================
-   更新语言
-========================================================= */
+let currentBlessingIndex = -1;
 
 function updateLanguageText() {
-
   document.querySelectorAll("[data-i18n]").forEach(element => {
+    const key = element.dataset.i18n;
+    const value = translations[currentLanguage]?.[key];
 
-    const key = element.getAttribute("data-i18n");
-    const translation = translations[currentLanguage]?.[key];
-
-    if (translation !== undefined) {
-      element.textContent = translation;
+    if (value !== undefined) {
+      element.textContent = value;
     }
-
   });
+}
 
+function setLanguage(language) {
+  if (!translations[language]) {
+    language = "zh";
+  }
+
+  currentLanguage = language;
+
+  document.body.classList.remove("lang-zh", "lang-en", "lang-ms");
+  document.body.classList.add(`lang-${language}`);
+
+  document.documentElement.lang =
+    language === "zh" ? "zh-CN" :
+    language === "en" ? "en" : "ms";
+
+  updateLanguageText();
+  renderVideos();
+  showNewWish();
+
+  document.querySelectorAll(".lang-btn").forEach(button => {
+    button.classList.toggle("active", button.dataset.lang === language);
+  });
 }
 
 
-/* =========================================================
-   创建备用封面
-========================================================= */
+/* =================================================
+   生成备用封面
+================================================= */
 
 function createFallbackCover(video) {
+  const title = video.type === "palace"
+    ? "故宫宝贝团圆夜"
+    : video.title;
 
-  if (video.palace) {
-
-    return `
-      <div class="video-cover-fallback palace-fallback">
-        <span class="video-fallback-label">MID-AUTUMN SPECIAL</span>
-        <strong class="video-fallback-title">故宫宝贝<br>团圆夜</strong>
-        <span class="video-fallback-subtitle">月光之下 · 国宝团圆</span>
-      </div>
-    `;
-
-  }
+  const subtitle = video.type === "palace"
+    ? "月光之下 · 国宝团圆"
+    : "中秋佳节 · 共话团圆";
 
   return `
     <div class="video-cover-fallback">
       <span class="video-fallback-label">MID-AUTUMN FESTIVAL</span>
-      <strong class="video-fallback-title">${video.title}</strong>
-      <span class="video-fallback-subtitle">中秋佳节 · 共话团圆</span>
+      <strong class="video-fallback-title">${title}</strong>
+      <span class="video-fallback-subtitle">${subtitle}</span>
     </div>
   `;
-
 }
 
 
-/* =========================================================
-   渲染视频卡片
-
-   每张卡片都保留：
-   影片封面
-   影片标题
-   影片介绍
-
-   如果图片加载失败，会自动显示备用封面。
-========================================================= */
+/* =================================================
+   生成六张视频卡片
+================================================= */
 
 function renderVideos() {
-
+  const videoGrid = document.getElementById("videoGrid");
   if (!videoGrid) return;
 
   videoGrid.innerHTML = "";
@@ -671,21 +640,30 @@ function renderVideos() {
   const list = videoData[currentLanguage] || videoData.zh;
 
   list.forEach((video, index) => {
-
     const card = document.createElement("article");
-    card.className = "video-card";
+
+    /*
+      第四张会获得专用 class：
+      video-card-customs
+    */
+
+    card.className = video.type === "customs"
+      ? "video-card video-card-customs"
+      : "video-card";
+
+    const fallback = createFallbackCover(video);
 
     card.innerHTML = `
       <div class="video-cover">
-
         <img
           src="${video.cover}"
           alt="${video.title}"
           loading="lazy"
+          decoding="async"
           referrerpolicy="no-referrer"
         >
 
-        ${createFallbackCover(video)}
+        ${fallback}
 
         <button
           class="video-play"
@@ -695,11 +673,9 @@ function renderVideos() {
         >
           <span class="play-triangle"></span>
         </button>
-
       </div>
 
       <div class="video-info">
-
         <span class="video-index">
           ${(index + 1).toString().padStart(2, "0")}
         </span>
@@ -707,94 +683,104 @@ function renderVideos() {
         <h3>${video.title}</h3>
 
         <p class="video-description">${video.description}</p>
-
       </div>
     `;
 
-    const coverImage = card.querySelector(".video-cover > img");
-    const fallbackCover = card.querySelector(".video-cover-fallback");
+    const image = card.querySelector(".video-cover > img");
+    const fallbackElement = card.querySelector(".video-cover-fallback");
 
-    coverImage.addEventListener("error", () => {
-      coverImage.style.display = "none";
-      fallbackCover.classList.add("show");
+    let triedFallback = false;
+
+    image.addEventListener("load", () => {
+      /*
+        高清封面无法提供时，尝试普通清晰度封面。
+      */
+
+      if (
+        !triedFallback &&
+        video.fallbackCover &&
+        image.naturalWidth > 0 &&
+        image.naturalWidth < 640
+      ) {
+        triedFallback = true;
+        image.src = video.fallbackCover;
+      }
+    });
+
+    image.addEventListener("error", () => {
+      if (!triedFallback && video.fallbackCover) {
+        triedFallback = true;
+        image.src = video.fallbackCover;
+        return;
+      }
+
+      image.style.display = "none";
+      fallbackElement.classList.add("show");
     });
 
     videoGrid.appendChild(card);
-
   });
 
-
-  document.querySelectorAll(".video-play").forEach(button => {
-
+  videoGrid.querySelectorAll(".video-play").forEach(button => {
     button.addEventListener("click", () => {
-
-      const index = Number(
-        button.getAttribute("data-video-index")
-      );
-
+      const index = Number(button.dataset.videoIndex);
       const video = list[index];
 
-      if (!video) return;
-
-      openVideo(video);
-
+      if (video) {
+        openVideo(video);
+      }
     });
-
   });
-
 }
 
 
-/* =========================================================
-   打开影片
-========================================================= */
+/* =================================================
+   视频播放
+================================================= */
 
 function openVideo(video) {
+  const modal = document.getElementById("videoModal");
+  const frame = document.getElementById("videoFrame");
 
-  if (!videoModal || !videoFrame) return;
+  if (!modal || !frame) return;
 
-  videoFrame.onload = null;
-  videoFrame.src = video.url;
-
-  videoModal.classList.add("show");
+  frame.src = video.url;
+  modal.classList.add("show");
   document.body.style.overflow = "hidden";
-
-  videoFrame.setAttribute(
-    "allow",
-    "autoplay; encrypted-media; fullscreen; picture-in-picture"
-  );
-
 }
-
-
-/* =========================================================
-   关闭影片
-========================================================= */
 
 function closeVideo() {
+  const modal = document.getElementById("videoModal");
+  const frame = document.getElementById("videoFrame");
 
-  if (!videoModal || !videoFrame) return;
+  if (!modal || !frame) return;
 
-  videoModal.classList.remove("show");
-  videoFrame.src = "";
-  videoFrame.onload = null;
-
+  modal.classList.remove("show");
+  frame.src = "";
   document.body.style.overflow = "";
-
 }
 
+document.getElementById("videoClose").addEventListener("click", closeVideo);
 
-/* =========================================================
-   祝福语
-========================================================= */
+document.getElementById("videoModalOverlay")
+  .addEventListener("click", closeVideo);
 
-let currentBlessingIndex = -1;
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    closeVideo();
+  }
+});
+
+
+/* =================================================
+   祝福语切换
+================================================= */
 
 function showNewWish() {
-
   const list = blessings[currentLanguage] || blessings.zh;
+  const textElement = document.getElementById("blessingText");
 
-  if (!list.length || !blessingText) return;
+  if (!textElement || list.length === 0) return;
 
   let index = Math.floor(Math.random() * list.length);
 
@@ -805,257 +791,121 @@ function showNewWish() {
   }
 
   currentBlessingIndex = index;
-  blessingText.textContent = list[index];
-
+  textElement.textContent = list[index];
 }
 
+document.getElementById("newWishBtn")
+  .addEventListener("click", showNewWish);
 
-/* =========================================================
-   复制祝福语
-========================================================= */
+document.getElementById("copyWishBtn")
+  .addEventListener("click", async () => {
+    const text = document.getElementById("blessingText").textContent.trim();
+    const button = document.getElementById("copyWishBtn");
+    const original = translations[currentLanguage].copyWish;
 
-async function copyBlessing() {
+    try {
+      await navigator.clipboard.writeText(text);
 
-  if (!blessingText || !copyWishBtn) return;
+      button.textContent =
+        currentLanguage === "zh" ? "已复制" :
+        currentLanguage === "en" ? "Copied" : "Disalin";
 
-  const text = blessingText.textContent.trim();
-
-  try {
-
-    await navigator.clipboard.writeText(text);
-
-    const originalText = translations[currentLanguage].copyWish;
-
-    copyWishBtn.textContent =
-      currentLanguage === "zh"
-        ? "已复制"
-        : currentLanguage === "en"
-          ? "Copied"
-          : "Disalin";
-
-    setTimeout(() => {
-      copyWishBtn.textContent = originalText;
-    }, 1500);
-
-  } catch (error) {
-
-    window.prompt("请复制下面的祝福文字：", text);
-
-  }
-
-}
+      setTimeout(() => {
+        button.textContent = original;
+      }, 1500);
+    } catch (error) {
+      window.prompt("请复制这句祝福：", text);
+    }
+  });
 
 
-/* =========================================================
+/* =================================================
    中秋倒数
-========================================================= */
+================================================= */
 
 const countdownTarget =
   new Date("2027-09-15T00:00:00+08:00").getTime();
 
 function updateCountdown() {
-
   const now = Date.now();
-  let difference = countdownTarget - now;
+  const difference = Math.max(0, countdownTarget - now);
 
-  if (difference < 0) {
-    difference = 0;
-  }
-
-  const day = 1000 * 60 * 60 * 24;
-  const hour = 1000 * 60 * 60;
-  const minute = 1000 * 60;
-
-  const days = Math.floor(difference / day);
-  const hours = Math.floor((difference % day) / hour);
-  const minutes = Math.floor((difference % hour) / minute);
-  const seconds = Math.floor((difference % minute) / 1000);
+  const oneDay = 1000 * 60 * 60 * 24;
+  const oneHour = 1000 * 60 * 60;
+  const oneMinute = 1000 * 60;
 
   document.getElementById("days").textContent =
-    String(days);
+    Math.floor(difference / oneDay);
 
   document.getElementById("hours").textContent =
-    String(hours).padStart(2, "0");
+    String(Math.floor((difference % oneDay) / oneHour)).padStart(2, "0");
 
   document.getElementById("minutes").textContent =
-    String(minutes).padStart(2, "0");
+    String(Math.floor((difference % oneHour) / oneMinute)).padStart(2, "0");
 
   document.getElementById("seconds").textContent =
-    String(seconds).padStart(2, "0");
-
+    String(Math.floor((difference % oneMinute) / 1000)).padStart(2, "0");
 }
 
 
-/* =========================================================
-   切换语言
-========================================================= */
+/* =================================================
+   手机导航菜单
+================================================= */
 
-function setLanguage(language) {
-
-  if (!translations[language]) {
-    language = "zh";
-  }
-
-  currentLanguage = language;
-
-  document.body.classList.remove(
-    "lang-zh",
-    "lang-en",
-    "lang-ms"
-  );
-
-  document.body.classList.add(`lang-${language}`);
-
-  document.documentElement.lang =
-    language === "zh"
-      ? "zh-CN"
-      : language === "en"
-        ? "en"
-        : "ms";
-
-  updateLanguageText();
-  renderVideos();
-  showNewWish();
-
-  document.querySelectorAll(".lang-btn").forEach(button => {
-
-    button.classList.toggle(
-      "active",
-      button.getAttribute("data-lang") === language
-    );
-
-  });
-
-}
-
-
-/* =========================================================
-   手机菜单
-========================================================= */
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const navPanel = document.getElementById("navPanel");
 
 function closeMobileMenu() {
-
-  if (navPanel) {
-    navPanel.classList.remove("show");
-  }
-
-  if (mobileMenuBtn) {
-    mobileMenuBtn.setAttribute("aria-expanded", "false");
-  }
-
+  navPanel.classList.remove("show");
+  mobileMenuBtn.setAttribute("aria-expanded", "false");
 }
 
-if (mobileMenuBtn && navPanel) {
-
-  mobileMenuBtn.addEventListener("click", () => {
-
-    const isOpen = navPanel.classList.toggle("show");
-
-    mobileMenuBtn.setAttribute(
-      "aria-expanded",
-      String(isOpen)
-    );
-
-  });
-
-}
+mobileMenuBtn.addEventListener("click", () => {
+  const opened = navPanel.classList.toggle("show");
+  mobileMenuBtn.setAttribute("aria-expanded", String(opened));
+});
 
 document.querySelectorAll(".main-nav a").forEach(link => {
   link.addEventListener("click", closeMobileMenu);
 });
 
 
-/* =========================================================
+/* =================================================
    语言按钮
-========================================================= */
+================================================= */
 
 document.querySelectorAll(".lang-btn").forEach(button => {
-
   button.addEventListener("click", () => {
-
-    const language = button.getAttribute("data-lang");
-
-    setLanguage(language);
-
+    setLanguage(button.dataset.lang);
   });
-
 });
 
 
-/* =========================================================
-   影片关闭
-========================================================= */
-
-if (videoClose) {
-  videoClose.addEventListener("click", closeVideo);
-}
-
-if (videoModalOverlay) {
-  videoModalOverlay.addEventListener("click", closeVideo);
-}
-
-document.addEventListener("keydown", event => {
-
-  if (event.key === "Escape") {
-    closeVideo();
-  }
-
-});
-
-
-/* =========================================================
-   祝福按钮
-========================================================= */
-
-if (newWishBtn) {
-  newWishBtn.addEventListener("click", showNewWish);
-}
-
-if (copyWishBtn) {
-  copyWishBtn.addEventListener("click", copyBlessing);
-}
-
-
-/* =========================================================
+/* =================================================
    返回顶部
-========================================================= */
+================================================= */
+
+const backTop = document.getElementById("backTop");
 
 window.addEventListener("scroll", () => {
-
-  if (!backTop) return;
-
-  if (window.scrollY > 450) {
-    backTop.classList.add("show");
-  } else {
-    backTop.classList.remove("show");
-  }
-
+  backTop.classList.toggle("show", window.scrollY > 450);
 });
 
-if (backTop) {
-
-  backTop.addEventListener("click", () => {
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-
+backTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
+});
 
-}
 
-
-/* =========================================================
+/* =================================================
    导航平滑滚动
-========================================================= */
+================================================= */
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-
   link.addEventListener("click", event => {
-
-    const targetId = link.getAttribute("href");
-    const target = document.querySelector(targetId);
+    const target = document.querySelector(link.getAttribute("href"));
 
     if (!target) return;
 
@@ -1067,30 +917,22 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const topPosition =
       target.getBoundingClientRect().top +
       window.scrollY -
-      headerHeight -
-      15;
+      headerHeight - 15;
 
     window.scrollTo({
       top: topPosition,
       behavior: "smooth"
     });
-
   });
-
 });
 
 
-/* =========================================================
+/* =================================================
    初始化
-========================================================= */
+================================================= */
 
-function init() {
-
+document.addEventListener("DOMContentLoaded", () => {
   setLanguage("zh");
   updateCountdown();
-
   setInterval(updateCountdown, 1000);
-
-}
-
-document.addEventListener("DOMContentLoaded", init);
+});

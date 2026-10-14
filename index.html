@@ -3,35 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="花好月圆 · 中秋佳节">
+  <meta name="description" content="花好月圆 · 中秋节文化与祝福">
   <title>花好月圆 · 中秋佳节</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="lang-zh">
 
-  <!-- 顶部导航 -->
   <header class="site-header">
     <div class="nav-wrap">
-
       <a href="#home" class="brand">
         <span class="brand-main">花好月圆</span>
         <span class="brand-sub">中秋佳节</span>
       </a>
 
-      <button
-        class="mobile-menu-btn"
-        id="mobileMenuBtn"
-        aria-label="打开菜单"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <button id="mobileMenuBtn" class="mobile-menu-btn"
+        type="button" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
 
       <div class="nav-panel" id="navPanel">
-
         <nav class="main-nav">
           <a href="#home" data-i18n="navHome">首页</a>
           <a href="#countdown" data-i18n="navCountdown">中秋倒数</a>
@@ -44,32 +35,27 @@
         </nav>
 
         <div class="language-switcher">
-          <button class="lang-btn active" data-lang="zh">华语</button>
-          <button class="lang-btn" data-lang="en">英文</button>
-          <button class="lang-btn" data-lang="ms">国语</button>
+          <button class="lang-btn active" data-lang="zh" type="button">华语</button>
+          <button class="lang-btn" data-lang="en" type="button">英文</button>
+          <button class="lang-btn" data-lang="ms" type="button">国语</button>
         </div>
-
       </div>
     </div>
   </header>
-
 
   <main>
 
     <!-- 首页 -->
     <section class="hero-section" id="home">
-
       <div class="moon-shape"></div>
       <div class="cloud-shape cloud-one"></div>
       <div class="cloud-two"></div>
-
       <div class="hero-lantern lantern-one">🏮</div>
       <div class="hero-lantern lantern-two">🏮</div>
 
       <div class="hero-content">
-
         <span class="hero-small" data-i18n="heroSmall">
-          MID-AUTUMN FESTIVAL
+      
         </span>
 
         <h1 data-i18n="heroTitle">花好月圆</h1>
@@ -79,86 +65,64 @@
         </p>
 
         <p class="hero-description" data-i18n="heroDescription">
-          一轮明月，一份思念，一桌团圆饭，
-          让我们一起认识这个温暖而美丽的传统节日。
+          一轮明月，一份思念，一桌团圆饭，让我们一起认识这个温暖而美丽的传统节日。
         </p>
 
         <div class="hero-actions">
           <a href="#countdown" class="primary-btn" data-i18n="heroButton">
             查看中秋倒数
           </a>
-
           <a href="#videos" class="secondary-btn" data-i18n="heroVideoButton">
             观看中秋影片
           </a>
         </div>
-
       </div>
     </section>
 
-
     <!-- 中秋倒数 -->
     <section class="section countdown-section" id="countdown">
-
       <div class="section-heading center-section-heading">
-        <span class="section-label" data-i18n="countdownLabel">
-          中秋倒数
-        </span>
-
-        <h2 data-i18n="countdownTitle">
-          距离下一次中秋节
-        </h2>
-
+        <span class="section-label" data-i18n="countdownLabel">中秋倒数</span>
+        <h2 data-i18n="countdownTitle">距离下一次中秋节</h2>
         <p data-i18n="countdownText">
           让我们一起等待下一轮明月，再一次和家人团聚。
         </p>
       </div>
 
       <div class="countdown-box">
-
         <div class="countdown-item">
           <strong id="days">0</strong>
           <span data-i18n="days">天</span>
         </div>
 
         <div class="countdown-item">
-          <strong id="hours">0</strong>
+          <strong id="hours">00</strong>
           <span data-i18n="hours">小时</span>
         </div>
 
         <div class="countdown-item">
-          <strong id="minutes">0</strong>
+          <strong id="minutes">00</strong>
           <span data-i18n="minutes">分钟</span>
         </div>
 
         <div class="countdown-item">
-          <strong id="seconds">0</strong>
+          <strong id="seconds">00</strong>
           <span data-i18n="seconds">秒</span>
         </div>
-
       </div>
     </section>
 
-
     <!-- 中秋由来 -->
     <section class="section history-section" id="history">
-
       <div class="section-heading center-section-heading">
-        <span class="section-label" data-i18n="historyLabel">
-          中秋由来
-        </span>
-
-        <h2 data-i18n="historyTitle">
-          一轮明月，流传千年的节日
-        </h2>
-
+        <span class="section-label" data-i18n="historyLabel">中秋由来</span>
+        <h2 data-i18n="historyTitle">一轮明月，流传千年的节日</h2>
         <p data-i18n="historyIntro">
           中秋节的形成经历了漫长的发展，从观察月亮，到举行祭月、赏月活动，最后逐渐成为今天大家熟悉的传统节日。
         </p>
       </div>
 
       <div class="history-timeline">
-
         <article class="history-item">
           <span class="history-number">01</span>
           <div>
@@ -198,7 +162,6 @@
             </p>
           </div>
         </article>
-
       </div>
 
       <div class="history-quote">
@@ -206,284 +169,188 @@
           月亮会照亮夜空，也会把远方的家人牵挂在一起。
         </p>
       </div>
-
     </section>
-
 
     <!-- 为什么过中秋 -->
     <section class="section why-section" id="why">
-
       <div class="section-heading center-section-heading">
-        <span class="section-label" data-i18n="whyLabel">
-          为什么过中秋
-        </span>
-
-        <h2 data-i18n="whyTitle">
-          因为团圆，是中秋最重要的意义
-        </h2>
-
+        <span class="section-label" data-i18n="whyLabel">为什么过中秋</span>
+        <h2 data-i18n="whyTitle">因为团圆，是中秋最重要的意义</h2>
         <p data-i18n="whyIntro">
           中秋不只是看月亮、吃月饼，更是一种把家人重新聚在一起的方式。
         </p>
       </div>
 
       <div class="why-grid">
-
         <article class="text-card">
           <span class="card-number">01</span>
           <h3 data-i18n="why1Title">想念家人</h3>
-          <p data-i18n="why1Text">
-            不管走得多远，中秋总会让人想起家人。
-          </p>
+          <p data-i18n="why1Text">不管走得多远，中秋总会让人想起家人。</p>
         </article>
 
         <article class="text-card">
           <span class="card-number">02</span>
           <h3 data-i18n="why2Title">感受团圆</h3>
-          <p data-i18n="why2Text">
-            一顿饭、一轮月亮，就能让一家人重新聚在一起。
-          </p>
+          <p data-i18n="why2Text">一顿饭、一轮月亮，就能让一家人重新聚在一起。</p>
         </article>
 
         <article class="text-card">
           <span class="card-number">03</span>
           <h3 data-i18n="why3Title">传承文化</h3>
-          <p data-i18n="why3Text">
-            一代代人继续庆祝，让传统文化一直延续下去。
-          </p>
+          <p data-i18n="why3Text">一代代人继续庆祝，让传统文化一直延续下去。</p>
         </article>
 
         <article class="text-card">
           <span class="card-number">04</span>
           <h3 data-i18n="why4Title">珍惜现在</h3>
-          <p data-i18n="why4Text">
-            能够和重要的人一起吃饭、聊天，本身就是最珍贵的幸福。
-          </p>
+          <p data-i18n="why4Text">能够和重要的人一起吃饭、聊天，本身就是最珍贵的幸福。</p>
         </article>
-
       </div>
     </section>
 
-
-    <!-- 中秋做什么 -->
+    <!-- 中秋习俗 -->
     <section class="section customs-section" id="customs">
-
       <div class="section-heading center-section-heading">
-        <span class="section-label" data-i18n="customsLabel">
-          中秋做什么
-        </span>
-
-        <h2 data-i18n="customsTitle">
-          从一顿饭，到一轮月
-        </h2>
-
+        <span class="section-label" data-i18n="customsLabel">中秋做什么</span>
+        <h2 data-i18n="customsTitle">从一顿饭，到一轮月</h2>
         <p data-i18n="customsIntro">
           从一顿团圆饭到一盏灯笼，这些习俗把“团圆”两个字过成了具体的一晚。
         </p>
       </div>
 
       <div class="customs-grid">
-
         <article class="custom-card">
           <span>01</span>
           <h3 data-i18n="custom1Title">赏月</h3>
-          <p data-i18n="custom1Text">
-            一起看月亮，享受安静而温暖的中秋夜。
-          </p>
+          <p data-i18n="custom1Text">一起看月亮，享受安静而温暖的中秋夜。</p>
         </article>
 
         <article class="custom-card">
           <span>02</span>
           <h3 data-i18n="custom2Title">吃月饼</h3>
-          <p data-i18n="custom2Text">
-            一口月饼，一口团圆，把家的味道留在记忆里。
-          </p>
+          <p data-i18n="custom2Text">一口月饼，一口团圆，把家的味道留在记忆里。</p>
         </article>
 
         <article class="custom-card">
           <span>03</span>
           <h3 data-i18n="custom3Title">团圆饭</h3>
-          <p data-i18n="custom3Text">
-            一家人围在一起吃饭，分享一天里的故事。
-          </p>
+          <p data-i18n="custom3Text">一家人围在一起吃饭，分享一天里的故事。</p>
         </article>
 
         <article class="custom-card">
           <span>04</span>
           <h3 data-i18n="custom4Title">提灯笼</h3>
-          <p data-i18n="custom4Text">
-            提着灯笼走一走，让夜晚多一份节日的温暖。
-          </p>
+          <p data-i18n="custom4Text">提着灯笼走一走，让夜晚多一份节日的温暖。</p>
         </article>
 
         <article class="custom-card">
           <span>05</span>
           <h3 data-i18n="custom5Title">赏花灯</h3>
-          <p data-i18n="custom5Text">
-            去看看热闹的花灯，感受传统节日的气氛。
-          </p>
+          <p data-i18n="custom5Text">去看看热闹的花灯，感受传统节日的气氛。</p>
         </article>
 
         <article class="custom-card">
           <span>06</span>
           <h3 data-i18n="custom6Title">聊天</h3>
-          <p data-i18n="custom6Text">
-            和家人聊聊天，珍惜能够坐在一起的时间。
-          </p>
+          <p data-i18n="custom6Text">和家人聊聊天，珍惜能够坐在一起的时间。</p>
         </article>
-
       </div>
     </section>
 
-
     <!-- 中秋美食 -->
     <section class="section food-section" id="food">
-
       <div class="section-heading center-section-heading">
-        <span class="section-label" data-i18n="foodLabel">
-          中秋美食
-        </span>
-
-        <h2 data-i18n="foodTitle">
-          一口月饼，是一口家的味道
-        </h2>
-
+        <span class="section-label" data-i18n="foodLabel">中秋美食</span>
+        <h2 data-i18n="foodTitle">一口月饼，是一口家的味道</h2>
         <p data-i18n="foodIntro">
           不同地区有不同的月饼风味，但它们都把“团圆”藏进了味道里。
         </p>
       </div>
 
       <div class="food-layout">
-
         <div class="food-text-intro">
           <div class="food-intro-content">
-
-            <h3 class="food-side-title" data-i18n="foodSideTitle">
-              不同的味道，
-              都有同一个名字：
-              团圆
-            </h3>
-
-            <p class="food-side-text" data-i18n="foodSideText">
-              从传统广式月饼，到清新的冰皮月饼，
-              再到一桌家常团圆饭，
-              中秋总能让人记住家的味道。
-            </p>
-
+            <h3 class="food-side-title" data-i18n="foodSideTitle">不同的味道，
+都有同一个名字：
+团圆</h3>
+            <p class="food-side-text" data-i18n="foodSideText">从传统广式月饼，到清新的冰皮月饼，
+再到一桌家常团圆饭，
+中秋总能让人记住家的味道。</p>
           </div>
         </div>
 
         <div class="food-list">
-
           <article class="food-card">
             <span class="food-tag" data-i18n="foodTag1">传统</span>
             <h3 data-i18n="food1Title">广式月饼</h3>
-            <p data-i18n="food1Text">
-              皮薄馅丰富，莲蓉、蛋黄等口味经典。
-            </p>
+            <p data-i18n="food1Text">皮薄馅丰富，莲蓉、蛋黄等口味经典。</p>
           </article>
 
           <article class="food-card">
             <span class="food-tag" data-i18n="foodTag2">清新</span>
             <h3 data-i18n="food2Title">冰皮月饼</h3>
-            <p data-i18n="food2Text">
-              颜色清新、口感柔软，很适合现代年轻人的中秋夜。
-            </p>
+            <p data-i18n="food2Text">颜色清新、口感柔软，很适合现代年轻人的中秋夜。</p>
           </article>
 
           <article class="food-card">
             <span class="food-tag" data-i18n="foodTag3">搭配</span>
             <h3 data-i18n="food3Title">月饼与茶</h3>
-            <p data-i18n="food3Text">
-              一块月饼配一杯茶，是很舒服的中秋味道。
-            </p>
+            <p data-i18n="food3Text">一块月饼配一杯茶，是很舒服的中秋味道。</p>
           </article>
 
           <article class="food-card">
             <span class="food-tag" data-i18n="foodTag4">团圆</span>
             <h3 data-i18n="food4Title">团圆家宴</h3>
-            <p data-i18n="food4Text">
-              一桌热腾腾的家常菜，让一家人一起好好吃一顿饭。
-            </p>
+            <p data-i18n="food4Text">一桌热腾腾的家常菜，让一家人一起好好吃一顿饭。</p>
           </article>
-
         </div>
       </div>
     </section>
 
-
     <!-- 中秋影片 -->
     <section class="section videos-section" id="videos">
-
       <div class="section-heading center-section-heading">
-        <span class="section-label" data-i18n="videosLabel">
-          中秋影片
-        </span>
-
-        <h2 data-i18n="videosTitle">
-          用影片认识不一样的中秋
-        </h2>
-
+        <span class="section-label" data-i18n="videosLabel">中秋影片</span>
+        <h2 data-i18n="videosTitle">用影片认识不一样的中秋</h2>
         <p data-i18n="videosIntro">
           从月亮、历史、团圆、习俗到美食，一起看看中秋节背后的故事。
         </p>
       </div>
 
       <div class="video-grid" id="videoGrid"></div>
-
     </section>
-
 
     <!-- 中秋祝福 -->
     <section class="section blessing-section" id="blessing">
-
       <div class="section-heading center-section-heading">
-        <span class="section-label" data-i18n="blessingLabel">
-          中秋祝福
-        </span>
-
-        <h2 data-i18n="blessingTitle">
-          把最好的祝福送给最重要的人
-        </h2>
-
-        <p data-i18n="blessingIntro">
-          愿你所念的人都在身边，所盼的事都能实现。
-        </p>
+        <span class="section-label" data-i18n="blessingLabel">中秋祝福</span>
+        <h2 data-i18n="blessingTitle">把最好的祝福送给最重要的人</h2>
+        <p data-i18n="blessingIntro">愿你所念的人都在身边，所盼的事都能实现。</p>
       </div>
 
       <div class="blessing-card">
         <div class="blessing-decoration">✦</div>
-
-        <p id="blessingText">
-          月圆人团圆，愿所有美好都在这个中秋如期而至。
-        </p>
-
+        <p id="blessingText">月圆人团圆，愿所有美好都在这个中秋如期而至。</p>
         <div class="blessing-decoration">✦</div>
       </div>
 
       <div class="blessing-actions">
-        <button class="small-action-btn" id="newWishBtn" data-i18n="newWish">
+        <button class="small-action-btn" id="newWishBtn" data-i18n="newWish" type="button">
           换一句祝福
         </button>
-
-        <button class="small-action-btn" id="copyWishBtn" data-i18n="copyWish">
+        <button class="small-action-btn" id="copyWishBtn" data-i18n="copyWish" type="button">
           复制祝福
         </button>
       </div>
-
     </section>
-
   </main>
 
-
-  <!-- 视频弹窗 -->
+  <!-- 视频播放窗口 -->
   <div class="video-modal" id="videoModal">
-
     <div class="video-modal-overlay" id="videoModalOverlay"></div>
 
     <div class="video-modal-box">
-
-      <button class="video-close" id="videoClose" aria-label="关闭">
+      <button class="video-close" id="videoClose" type="button" aria-label="关闭">
         ×
       </button>
 
@@ -496,26 +363,19 @@
           allowfullscreen>
         </iframe>
       </div>
-
     </div>
   </div>
 
-
-  <!-- 返回顶部 -->
-  <button class="back-top" id="backTop" aria-label="返回顶部">
+  <button class="back-top" id="backTop" type="button" aria-label="返回顶部">
     ↑
   </button>
 
-
-  <!-- 页脚 -->
   <footer class="site-footer">
-
     <div class="footer-inner">
       <h3 data-i18n="footerTitle">花好月圆 · 中秋佳节</h3>
       <p data-i18n="footerText">愿每一轮明月，都照亮回家的路。</p>
       <span class="footer-copy">© 2026 Mid-Autumn Festival</span>
     </div>
-
   </footer>
 
   <script src="scrip.js"></script>
