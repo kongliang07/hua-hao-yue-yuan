@@ -23,7 +23,6 @@ const translations = {
     navVideos: "中秋影片",
     navBlessing: "中秋祝福",
 
-    heroSmall: "MID-AUTUMN FESTIVAL",
     heroTitle: "花好月圆",
     heroSubtitle: "中秋佳节 · 共赏明月 · 共话团圆",
     heroDescription: "一轮明月，一份思念，一桌团圆饭，让我们一起认识这个温暖而美丽的传统节日。",
@@ -121,7 +120,6 @@ const translations = {
     navVideos: "Videos",
     navBlessing: "Wishes",
 
-    heroSmall: "MID-AUTUMN FESTIVAL",
     heroTitle: "A Moonlit Reunion",
     heroSubtitle: "Mid-Autumn Festival · Moonlight · Family Reunion",
     heroDescription: "A bright moon, a feeling of home, and a dinner shared together.",
@@ -219,7 +217,6 @@ const translations = {
     navVideos: "Video",
     navBlessing: "Ucapan",
 
-    heroSmall: "MID-AUTUMN FESTIVAL",
     heroTitle: "Bulan Purnama & Keluarga",
     heroSubtitle: "Perayaan Pertengahan Musim Luruh · Bulan · Keluarga",
     heroDescription: "Bulan yang terang, rasa rindu dan hidangan yang dinikmati bersama keluarga.",
@@ -619,7 +616,6 @@ function createFallbackCover(video) {
 
   return `
     <div class="video-cover-fallback">
-      <span class="video-fallback-label">MID-AUTUMN FESTIVAL</span>
       <strong class="video-fallback-title">${title}</strong>
       <span class="video-fallback-subtitle">${subtitle}</span>
     </div>
@@ -628,7 +624,7 @@ function createFallbackCover(video) {
 
 
 /* =================================================
-   生成六张视频卡片
+   生成六张影片卡片
 ================================================= */
 
 function renderVideos() {

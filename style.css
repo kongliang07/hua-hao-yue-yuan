@@ -275,13 +275,6 @@ button {
   text-align: center;
 }
 
-.hero-small {
-  display: inline-block;
-  margin-bottom: 18px;
-  font-size: 12px;
-  letter-spacing: .33em;
-}
-
 .hero-content h1 {
   margin: 0;
   font-family: "STKaiti", "KaiTi", serif;
@@ -593,9 +586,7 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* =================================================
-   影片封面框框：重点修正
-================================================= */
+/* 影片封面框框 */
 
 .video-grid {
   display: grid;
@@ -657,19 +648,13 @@ button {
   transition: transform .35s ease;
 }
 
-/*
-  重要：第4张图片单独放大裁切。
-  如果原始封面本身带有黑色边条，放大后就会裁掉边条。
-  overflow:hidden 会将放大的部分限制在封面框里面。
-*/
+/* 第4张图片单独放大裁切，减少原始封面里的黑边 */
 
 .video-card-customs .video-cover > img {
   transform: scale(1.20);
   object-fit: cover;
   object-position: center center;
 }
-
-/* 第4张鼠标经过时维持放大，不会又缩回去 */
 
 .video-card-customs:hover .video-cover > img {
   transform: scale(1.23);
@@ -748,13 +733,6 @@ button {
 .video-cover-fallback > * {
   position: relative;
   z-index: 1;
-}
-
-.video-fallback-label {
-  margin-bottom: 8px;
-  color: #f5d494;
-  font-size: 10px;
-  letter-spacing: .15em;
 }
 
 .video-fallback-title {
@@ -1168,7 +1146,7 @@ button {
     object-fit: cover;
   }
 
-  /* 手机端也保留第4张的放大裁切，防止黑边再次出现 */
+  /* 手机端也保留第4张的放大裁切 */
 
   .video-card-customs .video-cover > img {
     transform: scale(1.20);
